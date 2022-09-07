@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+img{
+    width: 590px;
+}
+.container {
+    position: relative;
+    width: 590px;
+    height: 332px;
+    margin: 50px auto 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container ul{
+    position: absolute;
+    top: 0;
+    width: 4720px;
+}
+
+.container ul li {
+    float: left;
+}
+
+.container ul li:first-child {
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.arrow a {
+    width: 34px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-family: simsun;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: #fff;
+}
+
+.arrow a:first-child {
+    border-radius: 0 40px 40px 0;
+    text-indent: -5px;
+}
+
+.arrow a:last-child {
+    border-radius:  40px 0 0 40px;
+    text-indent: 5px;
+}
+
+.container ol {
+    position: absolute;
+    left: 45%;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container ol li {
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.55);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.container ol li.current {
+    width: 12px;
+    height: 12px;
+    background-color: pink;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+}
